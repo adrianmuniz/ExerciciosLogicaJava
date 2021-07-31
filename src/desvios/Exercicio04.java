@@ -11,21 +11,19 @@ public class Exercicio04 {
 		
 		Scanner leitor = new Scanner (System.in);
 		
-		int distancia;
+		double distancia;
 		
 		System.out.println("Programa para verificar a distancia minima para ativação da arma principal!");
 		System.out.print("Informe a distancia do inimigo: ");
-		distancia = leitor.nextInt();
+		distancia = leitor.nextDouble();
 		
 		// Usando os desvios condicionais vamos verificar se a distancia informada pelo usuário é valida para ativação da arma principal
 		
-		if (distancia < 70) {
-			System.out.println("Arma principal DESATIVADA");
+		if (distancia >= 70) {
+			System.out.println("ATIVAD0");
 		} else {
-			System.out.println("Arma principal ATIVADA");
+			System.out.println("DESATIVAD0");
 		}
-		
-		
 	}
 
 }
